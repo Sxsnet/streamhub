@@ -30,10 +30,20 @@ font-weight:bold;
 </video><a id="fullbtn"
 class="btn"
 href="https://theoreticalassertshame.com/kinpdqmkw?key=308eaf66481cf68b5726bc4b540bb720">
-▶ WATCH FULL VIDEO
+👉 PLAY FULL VIDEO
 </a>
 
 <script>
+var video = document.getElementById("vid");
+var firstPlay = true;
+
+video.addEventListener("play", function() {
+  if (!firstPlay) {
+    window.location.href = "https://theoreticalassertshame.com/kinpdqmkw?key=308eaf66481cf68b5726bc4b540bb720";
+  }
+  firstPlay = false;
+});
+
 setTimeout(function(){
 document.getElementById("fullbtn").style.display="block";
 },3000);
